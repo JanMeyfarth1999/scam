@@ -1,5 +1,8 @@
 
+        const errorSound = new Audio("error.mp3");
+
         function startPrank() {
+            errorSound.play();
 
             for (let i = 0; i < 1000; i++) {
 
@@ -21,6 +24,11 @@
                     `;
 
                     document.body.appendChild(fenster);
+
+                    if ((i + 1) % 60 === 0) {
+                        errorSound.currentTime = 0;
+                        errorSound.play();
+                    }
 
                 }, i * 50);
             }
