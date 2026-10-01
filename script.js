@@ -1,7 +1,7 @@
 
         function startPrank() {
 
-            for (let i = 0; i < 70; i++) {
+            for (let i = 0; i < 1000; i++) {
 
                 setTimeout(function () {
 
