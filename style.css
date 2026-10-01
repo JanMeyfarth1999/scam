@@ -1,9 +1,106 @@
-      body {
-            margin: 0;
-            overflow: hidden;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b
+    );
+
+    color: white;
+}
+
+
+/* STARTSEITE */
+
+.start-container {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    width: 420px;
+    padding: 45px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+
+    backdrop-filter: blur(10px);
+}
+
+
+.icon {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+
+.card h1 {
+    margin: 0 0 15px 0;
+
+    font-size: 30px;
+}
+
+
+.card p {
+    margin-bottom: 30px;
+
+    color: #cbd5e1;
+
+    line-height: 1.6;
+}
+
+
+.card button {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.card button:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+}
+
+
+.status {
+    display: block;
+
+    margin-top: 22px;
+
+    font-size: 13px;
+
+    color: #22c55e;
+}
 
         .fakeWindow {
             position: absolute;
@@ -18,6 +115,7 @@
             padding: 10px;
 
             text-align: center;
+            color: black;
         }
 
         .fakeWindow h3 {
